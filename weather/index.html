@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-forecast</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <input class="input-city" type="text" placeholder="CIDADE">
+        <button class="btn" onclick="clickBtn()">
+            <img class="search" src="assets/images/search-alt-2-svgrepo-com.svg" alt="">
+        </button>
+
+        <div>
+            <h2 class="city">Tempo em Sao Paulo</h2>
+            <p class="weather">21 C</p>
+            
+            <div class="caixa-menor">
+                
+                <img class="img-forecast" src="https://openweathermap.org/img/wn/04d.png " alt="weather icon">
+
+                <p class="text-forecast">Nublado</p>
+            </div>
+
+            <p class="humidity">umidade: 70%</p>
+        </div>
+    </div>
+    <script src="./assets/js/script.js" defer></script>
+</body>
+
+</html>

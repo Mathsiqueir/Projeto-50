@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    background: white;
+  background: white;
   text-align: center;
   box-shadow: 3px 3px 16px #8d8b8b31;
   padding: 2rem;
@@ -64,7 +64,7 @@ body {
 
 .circle {
   background-color: #f1f1f1;
-  color:#e2e2e2;
+  color: #e2e2e2;
   border-radius: 50%;
   height: 30px;
   width: 30px;
