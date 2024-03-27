@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --cor1: #166087;
+}
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: url(../image/winter-mountains.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    background-color: transparent;
+    padding: 20px 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    text-decoration: none;
+    color: var(--cor1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.navbar a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cor1);
+    margin-left: 30px;
+}
+@media (max-width:780px) {
+    .header{
+        padding: 3% 5%;
+    }
+    .navbar a{
+        margin-left: 15px;
+    }
+    
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: var(--cor1);
+    transition: 1s ease-in;
+}
+
+.navbar a:hover::before{
+  width: 100%;
+  
+}
